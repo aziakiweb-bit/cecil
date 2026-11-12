@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aziakiwe - Butembo</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+body { background:#0f0f0f; color:#fff; line-height:1.6; }
+header { display:flex; justify-content:space-between; align-items:center; padding:20px 5%; background:#111; position:sticky; top:0; z-index:10; }
+.logo { font-size:22px; font-weight:800; color:#ffcc00; }
+nav a { color:#fff; text-decoration:none; margin-left:20px; font-size:14px; }
+nav a:hover { color:#ffcc00; }
+.hero { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#1a1a1a,#2b2b00); }
+.hero h1 { font-size:42px; margin-bottom:10px; }
+.hero h1 span { color:#ffcc00; }
+.hero p { color:#ccc; max-width:600px; margin:15px auto 30px; }
+.btn { display:inline-block; background:#ffcc00; color:#000; padding:12px 25px; border-radius:30px; text-decoration:none; font-weight:700; margin:5px; }
+.btn2 { background:transparent; border:2px solid #fff; color:#fff; }
+section { padding:60px 5%; max-width:1000px; margin:auto; }
+h2 { font-size:28px; margin-bottom:25px; text-align:center; }
+h2 span { color:#ffcc00; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.card { background:#1c1c1c; padding:25px; border-radius:15px; border:1px solid #333; }
+.card h3 { margin-bottom:10px; color:#ffcc00; }
+.card p { color:#bbb; font-size:14px; }
+.about { display:flex; gap:30px; flex-wrap:wrap; align-items:center; }
+.about div { flex:1; min-width:280px; }
+.about p { color:#bbb; margin-bottom:12px; }
+.contact { text-align:center; background:#1c1c1c; border-radius:20px; padding:40px 20px; }
+input, textarea { width:100%; padding:12px; margin:8px 0; border-radius:10px; border:none; background:#2a2a2a; color:#fff; }
+footer { text-align:center; padding:25px; color:#777; font-size:13px; border-top:1px solid #222; }
+@media(max-width:600px){ .hero h1{font-size:32px} nav a{margin-left:10px} }
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AZIAKIWE</div>
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#projets">Projets</a>
+<a href="#apropos">À propos</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="accueil">
+<h1>Salut, moi c'est <span>Aziakiwe</span> 👋</h1>
+<p>Je construis mon site, mes projets et mon avenir. Depuis <b>Butembo, Nord-Kivu</b>, pour le monde entier. 100% fait sur GitHub, sans terminal.</p>
+<a class="btn" href="#projets">Voir mes projets</a>
+<a class="btn btn2" href="#contact">Me contacter</a>
+</div>
+
+<section id="apropos">
+<h2>À <span>propos</span></h2>
+<div class="about">
+<div>
+<p>Bienvenue sur mon site officiel. Ici je partage ce que j'apprends, ce que je crée et ce que je veux devenir.</p>
+<p><b>📍 Ville :</b> Butembo, Nord-Kivu, RDC</p>
+<p><b>💻 Passion :</b> Web, GitHub, création de sites</p>
+<p><b>🎯 Objectif :</b> Devenir développeur et créer des projets utiles pour Butembo</p>
+</div>
+<div class="card">
+<h3>Ce que je fais</h3>
+<p>✅ Création de sites web simples et rapides<br>✅ Apprentissage HTML, CSS, GitHub Pages<br>✅ Projets personnels et idées d'entreprise à Butembo</p>
+</div>
+</div>
+</section>
+
+<section id="projets">
+<h2>Mes <span>Projets</span></h2>
+<div class="grid">
+<div class="card"><h3>🌐 Mon premier site</h3><p>Mon site officiel hébergé gratuitement sur GitHub Pages. C'est celui que tu visites maintenant, depuis Butembo.</p></div>
+<div class="card"><h3>📱 Projet à venir</h3><p>Bientôt, une application ou un site pour aider les gens à Butembo. Reste branché.</p></div>
+<div class="card"><h3>💡 Idées</h3><p>Je note toutes mes idées ici. Chaque grande chose commence par un petit site comme celui-ci.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Contacte-<span>moi</span></h2>
+<p style="color:#bbb; margin-bottom:20px;">Tu es à Butembo et tu as une idée, une question ou un projet ? Écris-moi.</p>
+<form onsubmit="alert('Merci Chef ! Ton message est bien noté.'); return false;">
+<input type="text" placeholder="Ton nom" required>
+<input type="email" placeholder="Ton email" required>
+<textarea rows="4" placeholder="Ton message..." required></textarea>
+<button class="btn" type="submit" style="border:none; cursor:pointer; width:100%;">Envoyer le message</button>
+</form>
+<p style="margin-top:20px;"><a href="https://github.com/aziakiweb-bit" style="color:#ffcc00;">Mon GitHub : aziakiweb-bit</a></p>
+</div>
+</section>
+
+<footer>© 2026 Aziakiwe - Fait avec ❤️ sur GitHub Pages - Butembo, RDC</footer>
+
+</body>
+</html>
